@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+/*
+-----------------
+Normalizing
+-----------------
+*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover, a:focus {
+  outline: none;
+}
+
+/*----*/
+
+h3 {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+  position: relative;
+  padding: 0 0 5px 0;
+}
+
+h3:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  bottom: -4px;
+  width: 25%;
+  height: 1px;
+  left: 0;
+  position: absolute;
+}
+
+.back {
+  padding: 50px 0 150px 0;
+}
+
+.color-1 {
+  background: #353535;
+}
+
+.color-2 {
+  background: #353535;
+}
+
+.color-3 {
+  background: #353535;
+}
+
+.color-4 {
+  background: #353535;
+}
+
+.color-5 {
+  background: #353535;
+}
+
+.color-6 {
+  background: #353535;
+}
+
+.color-7 {
+  background: #353535;
+}
+
+.color-8 {
+  background: #353535;
+}
+
+.color-9 {
+  background: #353535;
+}
+
+.color-10 {
+  background: #353535;
+}
+
+body * {
+  font-family: Lato !important;
+}
+
+/*
+-----------------
+common style
+-----------------
+*/
+.menu a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Lato;
+  font-size: 17pt;
+  font-weight: 400;
+  padding: 15px 25px;
+  /**/
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*
+---------------------------------------
+hover effect 4
+---------------------------------------
+*/
+
+.effect a:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.effect a:hover:after, .effect a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
